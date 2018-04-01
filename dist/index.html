@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exsy</title>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="stylesheet" href="libs/slick/css/slick.css">
+	<link rel="stylesheet" href="libs/slick/css/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="nav-menu">
+				<a href="#" class="nav-menu_logo">
+					<h1>Богдановский  
+						<span>карьер</span>
+					</h1>
+				</a>
+				<div class="nav-menu_items">
+					<ul id="anhcors">
+						<li>
+							<a href="#production">Производство</a>
+						</li>
+						<li>
+							<a href="#addres">Адрес карьера</a>
+						</li>
+					</ul>
+					<a href="#openModal" class="nav-menu_button">
+						Заказать звонок
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="slider">
+		<div>
+			<img src="img/slider1.jpg" alt="">
+		</div>
+		<div>
+			<img src="img/slider2.jpg" alt="">
+		</div>
+	</div>
+	<main>
+		<div class="left-section">
+			<section>
+				<div class="section-title" id="production">
+					<h3 class="section-title_text left-text-padding">
+						Производим и продаем щебень
+					</h3>
+					<div class="section-title_line"></div>
+				</div>	
+				<div class="section-text left-text-padding">
+					<p>
+						Площадь участка 96,1 га. Щебень и гравий из плотных пород для строительных работ. Прочность соответствует марке 800 (ДР-12). Запасы по гравию 28 %. Пески и пески-отсевы Богдановского-2 участка могут быть использованы в качестве строительного и дорожного материала. Мощность толщи 12-22,1 метра. Уровень грунтовых вод расположен ниже подошвы полезной толщи. Концентрация радионуклидов соответствует 1 классу СП 2.6.1.758-99.
+					</p>
+					<p>
+						<strong>Щебень 20×40</strong> пригоден в производстве бетона и изготовлении конструкций из него, для дорожного строительства при закладке фундамента зданий, при возведении производственных всех видов сооружений и др.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="section-title" id="addres">
+					<h3 class="section-title_text left-text-padding">
+						Адрес карьера
+					</h3>
+					<div class="section-title_line"></div>
+				</div>	
+				<div class="section-text left-text-padding">
+					<p class="location">
+						поселок Ханино, Суворовский район, Тульская область, Россия
+					</p>
+				</div>
+			</section>
+		</div>
+		<div class="right-section">
+			<section>
+				<div class="section-title">
+					<h3 class="section-title_text">
+						Контакты
+					</h3>
+					<div class="section-title_line"></div>
+				</div>	
+				<div class="section-text">
+					<p>Звоните:</p>
+					<p><span>8 (800)</span> 555-93-99</p>
+					<p><span>8 (495)</span> 638-55-85</p> 
+				</div>
+			</section>     
+		</div>
+		<div id="map" class="map"></div>
+	</main>
+	<footer>
+		<p class="footer-text"> &copy; 2015 Copyright</p>
+	</footer>
+
+	<!-- Модальное окно -->
+	<div id="openModal" class="modalWindow">
+        <div>
+			<a href="#close" title="Закрыть" class="close">X</a>
+			<h2>«Тест»</h2>
+			<p><strong>Богдановский карьер</strong> - лучший щебень по самой низкой цене </p>
+		</div>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+	<script src="libs/slick/js/slick.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvZ0jrwQ5yHlyKVsHVfgs_uvawZDe_F8k&callback=initMap">
+	</script>
+	<script src="js/script.js"></script>
+</body>
+</html>

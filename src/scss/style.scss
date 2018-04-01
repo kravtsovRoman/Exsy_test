@@ -1,0 +1,244 @@
+$mainColor:   #ffea00;
+
+$mainFont: 'Roboto', sans-serif;
+$secondFont: 'Fira Sans', sans-serif;
+
+body{
+	max-width: 1920px;
+	position: relative;
+	overflow-x: hidden;
+	font: 400 16px/30px $mainFont;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+} 
+.nav-menu{
+	width: inherit;
+	margin: 30px 0;
+	position: absolute;
+	top: 0px;
+	z-index: 2;
+	&_logo{
+		float: left; 
+		text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.45);
+		text-decoration: none;
+		& h1{
+			color: #fff;
+			font: 400 20px/36px $mainFont;
+			& span{
+				display: block;
+				color: $mainColor;
+				text-transform: uppercase;
+				font: 700 48px/52px $secondFont;
+			}
+		}
+	}
+	&_items{
+		float: right;
+		& ul{
+			font: 100 30px/72px $mainFont;
+			text-transform: uppercase;
+			& li{
+				margin-left: 26px;
+				float: left;
+				& a{
+					color: #000;
+					text-decoration: none;
+					transition: all .2s;
+					&:hover{
+						text-shadow: 3px 3px 5px #333;
+					}
+				}
+				&:before{
+					content: '|';
+					color: #fff;
+					margin-right: 26px;
+				}
+				&:first-child:before{
+					content: none;
+				}
+			}
+		}
+	}
+	&_button{
+		float: right;
+		padding: 0 50px;
+		background: #fff;
+		border: none;
+		border-radius: 30px;
+		color: #f9bf3a;
+		text-decoration: none;
+		font: 18px/52px $mainFont;
+		cursor: pointer;
+		transition: all .2s;
+		&:hover{
+			color: #fff;
+			background: #f9bf3a;
+			box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+		}
+	}
+}
+.slider{
+	position: relative;
+	& img{
+		width: 100%;
+		height: 100vh;
+	}
+	& .slick-arrow{
+		position: absolute;
+		top: 50%;
+		border-top: 100px solid transparent;
+		border-bottom: 100px solid transparent;
+		z-index: 2;
+		&:hover {
+			&:before{
+				content: url("../img/arrow_active.png");
+			}
+		}
+		&:before{
+			content: url("../img/arrow_no_active.png");
+			position: absolute;
+			top: calc(50% - 17px );
+			opacity: 1;
+		}
+	}
+	& .slick-prev{
+		left: 0px;
+		border-left: 100px solid white;
+		&:before{
+			left: -80px;
+		}
+	}
+	& .slick-next{
+		right: 0px;
+		border-right: 100px solid white;
+		&:before{
+			right: -80px;
+			transform: rotate(180deg);
+		}
+	}
+}
+main{
+	& .section-title{
+		position: relative;
+		&_text{
+			padding: 100px 0 20px 0;
+			font: 700 30px/52px $mainFont;
+			text-transform: uppercase;
+		}
+		&_line{
+			width: 100%;
+			height: 4px;
+			background: $mainColor;
+		}
+	}
+	& .section-text{
+		padding-top: 10px;
+		& p{
+			padding-top: 50px;
+		}
+		& .location{
+			margin-bottom: 50px;
+			&:before{
+				content: url('../img/location.png');
+				padding-right: 10px;
+			}
+		}
+	}
+	& .left-section{
+		width: 70%;
+		float: left;
+		padding-right: 100px;
+		box-sizing: border-box;
+		& .section-title{
+			display: inline-block;
+		}
+		& .left-text-padding{
+			padding-left: 360px;
+		}
+	}
+	& .right-section{
+		width: 30%;
+		float: right;
+		& section{
+			padding-left: 30px;
+			padding-bottom: 100px;
+			background: #f5f5f5;
+		}
+		& .section-title{
+			display: block;
+		}
+		& .section-text{
+			& p{
+				padding-top: 10px;
+				font-weight: 700;
+				& span{
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	& .map {
+		width: 100%;
+		height: 435px;
+		background-color: #ccc;
+		clear: both;
+		& .gmnoprint,
+		  .gm-style-cc, 
+		  img[src*="maps.gstatic.com"]{
+			display: none;
+		}	        
+	}
+}
+.footer-text{
+	padding: 10px 0;
+	color: #777;
+	text-align: center;
+	font: 400 14px/52px $mainFont;
+}
+// Modal window
+.modalWindow {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+	z-index: 999;
+	&:target {
+		display: block;
+	}
+	& div {
+		width: 600px;
+		position: relative;
+		margin: 10% auto;
+		padding: 20px;
+		background: #fff;
+		border-radius: 10px;
+		text-align: center;
+		& h2{
+			font-size: 3em;
+			padding-bottom: 30px;
+		}
+	}
+}
+.close {
+	width: 24px;
+	position: absolute;
+	top: -10px;
+	right: -12px;
+	background: #666;
+	color: #fff;
+	border-radius: 50%;
+	line-height: 25px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	&:hover { 
+		background: $mainColor; 
+		color: #000;
+	}
+}

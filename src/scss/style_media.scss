@@ -1,0 +1,161 @@
+@media screen and (max-width:1600px) {
+   main{
+      & .left-section{
+         width: 75%;
+         padding-right: 50px;
+         & .left-text-padding{
+            padding-left: 150px;
+         }
+      }
+      & .right-section{
+         width: 25%;
+      }
+      
+   } 
+}
+@media screen and (max-width:1280px) {
+   .nav-menu {
+      width: 90%;
+      margin: 30px 50px;
+   }
+   main{
+      & .left-section{
+         & .left-text-padding{
+            padding-left: 50px;
+         }
+      }
+   } 
+}
+@media screen and (max-width:960px) {
+   .nav-menu {
+      width: 98%;
+      margin: 30px 10px;
+      &_items ul li{
+         margin-left: 10px;
+         & a{
+            font-size: .8em;
+         }
+      }
+      &_button{
+         padding: 0 20px;
+      }
+   }
+   main{
+      & .left-section{
+         padding-right: 30px;
+         & .left-text-padding{
+            padding-left: 30px;
+         }
+      }
+      & .right-section{
+         & section{
+            padding-left: 10px;
+         }
+      }
+      & .section-title_text{
+         font-size: 25px;
+         padding: 30px 0 10px 0;
+      }
+      & .section-text{
+         & p{
+            padding-top: 20px;
+         }
+         & .location{
+            margin-bottom: 10px;
+         }
+      }   
+   } 
+   
+}
+@media screen and (max-width:720px) {
+   .slider{
+      display: none;
+   }
+   .container{
+      width: 100%;
+      & .nav-menu{
+         width: inherit;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         position: relative;
+         margin: 0;
+         background-image: url('../img/slider2.jpg');
+         background-position: center;
+         background-size: cover;
+         &_logo{
+            color: #000;
+            text-align: center;
+            & h1{
+              color: #000;
+            text-align: center;
+            }
+         }
+         &_items{
+            display: flex;
+            flex-direction: column;
+            & ul {
+               & li{
+                  float: none;
+                  margin: 0;
+                  font-size: 30px;
+                  &:before{
+                     content: '';
+                     margin: 0;
+                  }
+               }  
+            }
+         }
+         &_button{
+            margin: 10px auto;
+         }
+      }
+   } 
+   main{
+      & .left-section{
+         width: 100%;
+         padding-right: 0;
+         & .section-title{
+            display: block;
+            text-align: center;
+         }
+         & .left-text-padding{
+            padding-left: 0;
+         }
+      }
+      & .right-section{
+         width: 100%;
+         & section{
+            margin: 0 auto;
+            background: none;
+            text-align: center;
+            padding-bottom: 20px;
+         }
+      }
+      & section{
+         padding: 0 20px;
+      }
+   } 
+   .modalWindow div{
+      width: 70%;
+   }
+}
+@media screen and (max-width:400px) {
+   .container .nav-menu_items ul li{
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, .5);
+      border-radius: 20px;
+      margin-top: 10px;
+   }
+   main{
+      & .section-title_text{
+         font-size: 1.1em;
+      }
+      & .section-text p{
+         font-size: 0.9em;
+      }
+   }
+}
